@@ -1,0 +1,37 @@
+//Super employee class
+
+public class Employee{
+
+//creates private variables that can only be accessed directly in this class
+  private final String firstName;
+  private final String lastName;
+  private final String socialSecNum;
+  
+//constructor that creates a basic employee obj, takes three variables and sets them equal to their private counter parts
+  public Employee(String fName, String lName, String social) {
+    firstName=fName;
+    lastName=lName;
+    socialSecNum=social;
+  }
+  
+//returns object referenced first name
+  public String getFirstName(){
+    return firstName;
+  }
+  
+//returns object referenced last name
+   public String getLastName(){
+    return lasttName;
+  }
+
+//returns object referened social 
+  public String getSocialSecurityNumber(){
+    return socialSecNum;
+  }
+  
+//clearly prints and displays referenced objects stored 
+  public String toString(){
+    return "Employee Name: " + getFirstName() + " " + getLastName() + " " + "\n" + "Employee Social Security Number: " + getSocialSecurityNumber();
+  }
+  
+}

@@ -1,0 +1,19 @@
+public class PieceWorker extends Employee{
+
+  //private variables
+  private double wage;
+  private int piecesProduced;
+  
+  //constructor 
+  public PieceWorker(double wage, int piecesProduced){
+    this.wage=wage;
+    this.piecesProduced=piecesProduced;
+  }
+  
+  //calculates earnings
+  public double earnings(){
+    return (wage*piecesProduced);
+  }
+  
+}
+  

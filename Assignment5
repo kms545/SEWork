@@ -1,0 +1,38 @@
+//Checks if inputed String is a palindrome
+import.java.util.*;
+
+public class Assignment5 {
+  public static void main (String args[]){
+  
+  //Creating a new scanner obj
+  Scanner s= new Scanner (System.in);
+  
+  //instatiating variables
+  String input;
+  String reverse="";
+  int len;
+  
+  //prompts user for input value
+  System.out.print("Enter word: ");
+    input.s=nextLine();
+    
+  //gets length of input string
+  len=input.length();
+  
+  //loop that creates a new string opposite of input
+  for (int i=len-1; i>=0; i--){
+    reverse=reverse+input.charAt(i);
+  }
+  
+  //if statement to check the values are equal
+  if (input.equalsIgnoreCase(reverse){
+    System.out.println("" + input + " is a palindrome");
+  }
+  
+    else{
+      System.out.println("" + input + " is not a palindrome");
+    }
+    
+  }
+  
+}

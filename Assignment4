@@ -1,0 +1,54 @@
+//Program to take input and break it down into quarters, dimes, nickels, and pennies
+import java.util.*;
+
+public class Assignment4 {
+  public static void main (String args[]){
+  
+  //Creates a new Scanner obj
+  Scanner s= new Scanner (System.in);
+  
+  
+  //instanitates variables
+  int input;
+  int quarters= 0;
+  int dimes= 0;
+  int nickels= 0;
+  int pennies= 0;
+  
+  //Prompts user for value
+  System.out.print ("Amount: ");
+    input=s.nextInt();
+    
+  
+  //when the amount is greater than or equal to 25
+  while(input>=25){
+    input=input-25;
+    quarters++;
+  }
+  
+  //when amount is less than 25 and greater than or equal to 10
+  while(input<25 && input>=10){
+    input=input-10;
+    dimes++;
+  }
+  
+  //when the amount is less than 10 and greater than or equal to 5
+  while(input<10 && input>=5){
+    input=input-5;
+    nickels++;
+  }
+  
+  //when the amount is less than 5 and greater than 0
+  while(input<5 && input>0){
+    input=input-1;
+    pennies++;
+  }
+  
+  //Prints change dispensed
+  System.out.println("Change dispensed: " + quarters + " quarters " + dimes + " dimes " + nickels + " nickels " + pennies + " pennies ");
+  
+  
+  
+    }
+    
+  }
